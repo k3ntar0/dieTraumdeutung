@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0AF07432353E98800518086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AF07422353E98800518086 /* AppDelegate.swift */; };
+		B0AF07452353E98800518086 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AF07442353E98800518086 /* SceneDelegate.swift */; };
+		B0AF07472353E98800518086 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AF07462353E98800518086 /* ViewController.swift */; };
+		B0AF074A2353E98800518086 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0AF07482353E98800518086 /* Main.storyboard */; };
+		B0AF074C2353E98900518086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0AF074B2353E98900518086 /* Assets.xcassets */; };
+		B0AF074F2353E98900518086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0AF074D2353E98900518086 /* LaunchScreen.storyboard */; };
+		B0AF075A2353E98900518086 /* dieTraumdeutungTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AF07592353E98900518086 /* dieTraumdeutungTests.swift */; };
+		B0AF07652353E98900518086 /* dieTraumdeutungUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AF07642353E98900518086 /* dieTraumdeutungUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0AF07562353E98900518086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AF07372353E98800518086 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0AF073E2353E98800518086;
+			remoteInfo = dieTraumdeutung;
+		};
+		B0AF07612353E98900518086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AF07372353E98800518086 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0AF073E2353E98800518086;
+			remoteInfo = dieTraumdeutung;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B0AF073F2353E98800518086 /* dieTraumdeutung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dieTraumdeutung.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0AF07422353E98800518086 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B0AF07442353E98800518086 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B0AF07462353E98800518086 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B0AF07492353E98800518086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B0AF074B2353E98900518086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0AF074E2353E98900518086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0AF07502353E98900518086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0AF07552353E98900518086 /* dieTraumdeutungTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dieTraumdeutungTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0AF07592353E98900518086 /* dieTraumdeutungTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dieTraumdeutungTests.swift; sourceTree = "<group>"; };
+		B0AF075B2353E98900518086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0AF07602353E98900518086 /* dieTraumdeutungUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dieTraumdeutungUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0AF07642353E98900518086 /* dieTraumdeutungUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dieTraumdeutungUITests.swift; sourceTree = "<group>"; };
+		B0AF07662353E98900518086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0AF073C2353E98800518086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0AF07522353E98900518086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0AF075D2353E98900518086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0AF07362353E98800518086 = {
+			isa = PBXGroup;
+			children = (
+				B0AF07412353E98800518086 /* dieTraumdeutung */,
+				B0AF07582353E98900518086 /* dieTraumdeutungTests */,
+				B0AF07632353E98900518086 /* dieTraumdeutungUITests */,
+				B0AF07402353E98800518086 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0AF07402353E98800518086 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0AF073F2353E98800518086 /* dieTraumdeutung.app */,
+				B0AF07552353E98900518086 /* dieTraumdeutungTests.xctest */,
+				B0AF07602353E98900518086 /* dieTraumdeutungUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0AF07412353E98800518086 /* dieTraumdeutung */ = {
+			isa = PBXGroup;
+			children = (
+				B0AF07422353E98800518086 /* AppDelegate.swift */,
+				B0AF07442353E98800518086 /* SceneDelegate.swift */,
+				B0AF07462353E98800518086 /* ViewController.swift */,
+				B0AF07482353E98800518086 /* Main.storyboard */,
+				B0AF074B2353E98900518086 /* Assets.xcassets */,
+				B0AF074D2353E98900518086 /* LaunchScreen.storyboard */,
+				B0AF07502353E98900518086 /* Info.plist */,
+			);
+			path = dieTraumdeutung;
+			sourceTree = "<group>";
+		};
+		B0AF07582353E98900518086 /* dieTraumdeutungTests */ = {
+			isa = PBXGroup;
+			children = (
+				B0AF07592353E98900518086 /* dieTraumdeutungTests.swift */,
+				B0AF075B2353E98900518086 /* Info.plist */,
+			);
+			path = dieTraumdeutungTests;
+			sourceTree = "<group>";
+		};
+		B0AF07632353E98900518086 /* dieTraumdeutungUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B0AF07642353E98900518086 /* dieTraumdeutungUITests.swift */,
+				B0AF07662353E98900518086 /* Info.plist */,
+			);
+			path = dieTraumdeutungUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0AF073E2353E98800518086 /* dieTraumdeutung */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0AF07692353E98900518086 /* Build configuration list for PBXNativeTarget "dieTraumdeutung" */;
+			buildPhases = (
+				B0AF073B2353E98800518086 /* Sources */,
+				B0AF073C2353E98800518086 /* Frameworks */,
+				B0AF073D2353E98800518086 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dieTraumdeutung;
+			productName = dieTraumdeutung;
+			productReference = B0AF073F2353E98800518086 /* dieTraumdeutung.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0AF07542353E98900518086 /* dieTraumdeutungTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0AF076C2353E98900518086 /* Build configuration list for PBXNativeTarget "dieTraumdeutungTests" */;
+			buildPhases = (
+				B0AF07512353E98900518086 /* Sources */,
+				B0AF07522353E98900518086 /* Frameworks */,
+				B0AF07532353E98900518086 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0AF07572353E98900518086 /* PBXTargetDependency */,
+			);
+			name = dieTraumdeutungTests;
+			productName = dieTraumdeutungTests;
+			productReference = B0AF07552353E98900518086 /* dieTraumdeutungTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B0AF075F2353E98900518086 /* dieTraumdeutungUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0AF076F2353E98900518086 /* Build configuration list for PBXNativeTarget "dieTraumdeutungUITests" */;
+			buildPhases = (
+				B0AF075C2353E98900518086 /* Sources */,
+				B0AF075D2353E98900518086 /* Frameworks */,
+				B0AF075E2353E98900518086 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0AF07622353E98900518086 /* PBXTargetDependency */,
+			);
+			name = dieTraumdeutungUITests;
+			productName = dieTraumdeutungUITests;
+			productReference = B0AF07602353E98900518086 /* dieTraumdeutungUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0AF07372353E98800518086 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = k3ntar0;
+				TargetAttributes = {
+					B0AF073E2353E98800518086 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					B0AF07542353E98900518086 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = B0AF073E2353E98800518086;
+					};
+					B0AF075F2353E98900518086 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = B0AF073E2353E98800518086;
+					};
+				};
+			};
+			buildConfigurationList = B0AF073A2353E98800518086 /* Build configuration list for PBXProject "dieTraumdeutung" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0AF07362353E98800518086;
+			productRefGroup = B0AF07402353E98800518086 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0AF073E2353E98800518086 /* dieTraumdeutung */,
+				B0AF07542353E98900518086 /* dieTraumdeutungTests */,
+				B0AF075F2353E98900518086 /* dieTraumdeutungUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0AF073D2353E98800518086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0AF074F2353E98900518086 /* LaunchScreen.storyboard in Resources */,
+				B0AF074C2353E98900518086 /* Assets.xcassets in Resources */,
+				B0AF074A2353E98800518086 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0AF07532353E98900518086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0AF075E2353E98900518086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0AF073B2353E98800518086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0AF07472353E98800518086 /* ViewController.swift in Sources */,
+				B0AF07432353E98800518086 /* AppDelegate.swift in Sources */,
+				B0AF07452353E98800518086 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0AF07512353E98900518086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0AF075A2353E98900518086 /* dieTraumdeutungTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0AF075C2353E98900518086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0AF07652353E98900518086 /* dieTraumdeutungUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0AF07572353E98900518086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0AF073E2353E98800518086 /* dieTraumdeutung */;
+			targetProxy = B0AF07562353E98900518086 /* PBXContainerItemProxy */;
+		};
+		B0AF07622353E98900518086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0AF073E2353E98800518086 /* dieTraumdeutung */;
+			targetProxy = B0AF07612353E98900518086 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B0AF07482353E98800518086 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0AF07492353E98800518086 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B0AF074D2353E98900518086 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0AF074E2353E98900518086 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0AF07672353E98900518086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B0AF07682353E98900518086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0AF076A2353E98900518086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZPX3QHDSR4;
+				INFOPLIST_FILE = dieTraumdeutung/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = k3ntar0.dieTraumdeutung;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0AF076B2353E98900518086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZPX3QHDSR4;
+				INFOPLIST_FILE = dieTraumdeutung/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = k3ntar0.dieTraumdeutung;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B0AF076D2353E98900518086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZPX3QHDSR4;
+				INFOPLIST_FILE = dieTraumdeutungTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = k3ntar0.dieTraumdeutungTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dieTraumdeutung.app/dieTraumdeutung";
+			};
+			name = Debug;
+		};
+		B0AF076E2353E98900518086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZPX3QHDSR4;
+				INFOPLIST_FILE = dieTraumdeutungTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = k3ntar0.dieTraumdeutungTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dieTraumdeutung.app/dieTraumdeutung";
+			};
+			name = Release;
+		};
+		B0AF07702353E98900518086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZPX3QHDSR4;
+				INFOPLIST_FILE = dieTraumdeutungUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = k3ntar0.dieTraumdeutungUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = dieTraumdeutung;
+			};
+			name = Debug;
+		};
+		B0AF07712353E98900518086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZPX3QHDSR4;
+				INFOPLIST_FILE = dieTraumdeutungUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = k3ntar0.dieTraumdeutungUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = dieTraumdeutung;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0AF073A2353E98800518086 /* Build configuration list for PBXProject "dieTraumdeutung" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0AF07672353E98900518086 /* Debug */,
+				B0AF07682353E98900518086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0AF07692353E98900518086 /* Build configuration list for PBXNativeTarget "dieTraumdeutung" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0AF076A2353E98900518086 /* Debug */,
+				B0AF076B2353E98900518086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0AF076C2353E98900518086 /* Build configuration list for PBXNativeTarget "dieTraumdeutungTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0AF076D2353E98900518086 /* Debug */,
+				B0AF076E2353E98900518086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0AF076F2353E98900518086 /* Build configuration list for PBXNativeTarget "dieTraumdeutungUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0AF07702353E98900518086 /* Debug */,
+				B0AF07712353E98900518086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0AF07372353E98800518086 /* Project object */;
+}
