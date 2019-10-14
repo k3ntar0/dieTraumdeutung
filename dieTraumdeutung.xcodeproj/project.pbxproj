@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98B3A290DCD41152738BBA8A /* Pods_dieTraumdeutungTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39029B8DE083CE2C5C76A168 /* Pods_dieTraumdeutungTests.framework */; };
 		B0AF07432353E98800518086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AF07422353E98800518086 /* AppDelegate.swift */; };
 		B0AF07452353E98800518086 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AF07442353E98800518086 /* SceneDelegate.swift */; };
 		B0AF07472353E98800518086 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AF07462353E98800518086 /* ViewController.swift */; };
@@ -18,8 +19,12 @@
 		B0D717152354183A006B0CB4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D717142354183A006B0CB4 /* SignUpViewController.swift */; };
 		B0D7171723541869006B0CB4 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7171623541869006B0CB4 /* LogInViewController.swift */; };
 		B0D7171923541872006B0CB4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7171823541872006B0CB4 /* HomeViewController.swift */; };
+		B0DB2CF823546671003BA7A5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DB2CF723546671003BA7A5 /* Constants.swift */; };
+		B0DB2CFB23547780003BA7A5 /* loginbg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B0DB2CFA23547735003BA7A5 /* loginbg.mp4 */; };
 		B0E3ED5C235431BB0008FC54 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0E3ED5B235431BB0008FC54 /* GoogleService-Info.plist */; };
 		B0F2C5DF235421D8000740D2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F2C5DE235421D8000740D2 /* Utilities.swift */; };
+		DE62FE9999978228D6DFE6C2 /* Pods_dieTraumdeutung_dieTraumdeutungUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2D8BF9F4639260C6AED6DB /* Pods_dieTraumdeutung_dieTraumdeutungUITests.framework */; };
+		EB61A3E2664183238CDA258D /* Pods_dieTraumdeutung.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8AD39CBAEC4CF2CD28A8AF /* Pods_dieTraumdeutung.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E196AD42DBBC1672182DA69 /* Pods-dieTraumdeutung.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dieTraumdeutung.release.xcconfig"; path = "Target Support Files/Pods-dieTraumdeutung/Pods-dieTraumdeutung.release.xcconfig"; sourceTree = "<group>"; };
+		101A7DE622EEF9BFF55B66A5 /* Pods-dieTraumdeutungTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dieTraumdeutungTests.debug.xcconfig"; path = "Target Support Files/Pods-dieTraumdeutungTests/Pods-dieTraumdeutungTests.debug.xcconfig"; sourceTree = "<group>"; };
+		39029B8DE083CE2C5C76A168 /* Pods_dieTraumdeutungTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dieTraumdeutungTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE4A613B7FD2B5118610DC5 /* Pods-dieTraumdeutung.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dieTraumdeutung.debug.xcconfig"; path = "Target Support Files/Pods-dieTraumdeutung/Pods-dieTraumdeutung.debug.xcconfig"; sourceTree = "<group>"; };
+		9C2D8BF9F4639260C6AED6DB /* Pods_dieTraumdeutung_dieTraumdeutungUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dieTraumdeutung_dieTraumdeutungUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0AF073F2353E98800518086 /* dieTraumdeutung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dieTraumdeutung.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0AF07422353E98800518086 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0AF07442353E98800518086 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,8 +67,14 @@
 		B0D717142354183A006B0CB4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B0D7171623541869006B0CB4 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		B0D7171823541872006B0CB4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B0DB2CF723546671003BA7A5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B0DB2CFA23547735003BA7A5 /* loginbg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginbg.mp4; sourceTree = "<group>"; };
 		B0E3ED5B235431BB0008FC54 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B0F2C5DE235421D8000740D2 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		DD8AD39CBAEC4CF2CD28A8AF /* Pods_dieTraumdeutung.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dieTraumdeutung.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1F4B316F615BD1BF0F7EB67 /* Pods-dieTraumdeutung-dieTraumdeutungUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dieTraumdeutung-dieTraumdeutungUITests.debug.xcconfig"; path = "Target Support Files/Pods-dieTraumdeutung-dieTraumdeutungUITests/Pods-dieTraumdeutung-dieTraumdeutungUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E61EB2A8BE1ED1CB8CDAF31D /* Pods-dieTraumdeutungTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dieTraumdeutungTests.release.xcconfig"; path = "Target Support Files/Pods-dieTraumdeutungTests/Pods-dieTraumdeutungTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC97B75ADA6326DC0847673B /* Pods-dieTraumdeutung-dieTraumdeutungUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dieTraumdeutung-dieTraumdeutungUITests.release.xcconfig"; path = "Target Support Files/Pods-dieTraumdeutung-dieTraumdeutungUITests/Pods-dieTraumdeutung-dieTraumdeutungUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB61A3E2664183238CDA258D /* Pods_dieTraumdeutung.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98B3A290DCD41152738BBA8A /* Pods_dieTraumdeutungTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +98,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE62FE9999978228D6DFE6C2 /* Pods_dieTraumdeutung_dieTraumdeutungUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2ABB1729501065BA8F02A0AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EE4A613B7FD2B5118610DC5 /* Pods-dieTraumdeutung.debug.xcconfig */,
+				0E196AD42DBBC1672182DA69 /* Pods-dieTraumdeutung.release.xcconfig */,
+				E1F4B316F615BD1BF0F7EB67 /* Pods-dieTraumdeutung-dieTraumdeutungUITests.debug.xcconfig */,
+				EC97B75ADA6326DC0847673B /* Pods-dieTraumdeutung-dieTraumdeutungUITests.release.xcconfig */,
+				101A7DE622EEF9BFF55B66A5 /* Pods-dieTraumdeutungTests.debug.xcconfig */,
+				E61EB2A8BE1ED1CB8CDAF31D /* Pods-dieTraumdeutungTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A7FD539CBA4F0399749AE6E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD8AD39CBAEC4CF2CD28A8AF /* Pods_dieTraumdeutung.framework */,
+				9C2D8BF9F4639260C6AED6DB /* Pods_dieTraumdeutung_dieTraumdeutungUITests.framework */,
+				39029B8DE083CE2C5C76A168 /* Pods_dieTraumdeutungTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B0AF07362353E98800518086 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +135,8 @@
 				B0AF07582353E98900518086 /* dieTraumdeutungTests */,
 				B0AF07632353E98900518086 /* dieTraumdeutungUITests */,
 				B0AF07402353E98800518086 /* Products */,
+				2ABB1729501065BA8F02A0AD /* Pods */,
+				A7FD539CBA4F0399749AE6E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,10 +153,11 @@
 		B0AF07412353E98800518086 /* dieTraumdeutung */ = {
 			isa = PBXGroup;
 			children = (
-				B0F2C5E02354251E000740D2 /* Helpers */,
-				B0D7171A2354189E006B0CB4 /* View Controllers */,
 				B0AF07422353E98800518086 /* AppDelegate.swift */,
 				B0AF07442353E98800518086 /* SceneDelegate.swift */,
+				B0F2C5E02354251E000740D2 /* Helpers */,
+				B0D7171A2354189E006B0CB4 /* View Controllers */,
+				B0DB2CF923547689003BA7A5 /* Media */,
 				B0AF07482353E98800518086 /* Main.storyboard */,
 				B0AF074B2353E98900518086 /* Assets.xcassets */,
 				B0AF074D2353E98900518086 /* LaunchScreen.storyboard */,
@@ -151,10 +196,19 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
+		B0DB2CF923547689003BA7A5 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				B0DB2CFA23547735003BA7A5 /* loginbg.mp4 */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
 		B0F2C5E02354251E000740D2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				B0F2C5DE235421D8000740D2 /* Utilities.swift */,
+				B0DB2CF723546671003BA7A5 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -166,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0AF07692353E98900518086 /* Build configuration list for PBXNativeTarget "dieTraumdeutung" */;
 			buildPhases = (
+				DFD3C141FD0BFC70814BDB90 /* [CP] Check Pods Manifest.lock */,
 				B0AF073B2353E98800518086 /* Sources */,
 				B0AF073C2353E98800518086 /* Frameworks */,
 				B0AF073D2353E98800518086 /* Resources */,
+				D48D2FC74BF5ADF57341B252 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +239,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0AF076C2353E98900518086 /* Build configuration list for PBXNativeTarget "dieTraumdeutungTests" */;
 			buildPhases = (
+				6D6979B5EE14152D8B37F827 /* [CP] Check Pods Manifest.lock */,
 				B0AF07512353E98900518086 /* Sources */,
 				B0AF07522353E98900518086 /* Frameworks */,
 				B0AF07532353E98900518086 /* Resources */,
@@ -201,9 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0AF076F2353E98900518086 /* Build configuration list for PBXNativeTarget "dieTraumdeutungUITests" */;
 			buildPhases = (
+				40A5B8D32FC79A661314B632 /* [CP] Check Pods Manifest.lock */,
 				B0AF075C2353E98900518086 /* Sources */,
 				B0AF075D2353E98900518086 /* Frameworks */,
 				B0AF075E2353E98900518086 /* Resources */,
+				F6869AAC44F7A58BAB0FA754 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0AF074F2353E98900518086 /* LaunchScreen.storyboard in Resources */,
+				B0DB2CFB23547780003BA7A5 /* loginbg.mp4 in Resources */,
 				B0E3ED5C235431BB0008FC54 /* GoogleService-Info.plist in Resources */,
 				B0AF074C2353E98900518086 /* Assets.xcassets in Resources */,
 				B0AF074A2353E98800518086 /* Main.storyboard in Resources */,
@@ -286,6 +346,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		40A5B8D32FC79A661314B632 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dieTraumdeutung-dieTraumdeutungUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D6979B5EE14152D8B37F827 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dieTraumdeutungTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D48D2FC74BF5ADF57341B252 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dieTraumdeutung/Pods-dieTraumdeutung-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dieTraumdeutung/Pods-dieTraumdeutung-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dieTraumdeutung/Pods-dieTraumdeutung-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFD3C141FD0BFC70814BDB90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dieTraumdeutung-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6869AAC44F7A58BAB0FA754 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dieTraumdeutung-dieTraumdeutungUITests/Pods-dieTraumdeutung-dieTraumdeutungUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dieTraumdeutung-dieTraumdeutungUITests/Pods-dieTraumdeutung-dieTraumdeutungUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dieTraumdeutung-dieTraumdeutungUITests/Pods-dieTraumdeutung-dieTraumdeutungUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B0AF073B2353E98800518086 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -296,6 +459,7 @@
 				B0F2C5DF235421D8000740D2 /* Utilities.swift in Sources */,
 				B0D717152354183A006B0CB4 /* SignUpViewController.swift in Sources */,
 				B0D7171723541869006B0CB4 /* LogInViewController.swift in Sources */,
+				B0DB2CF823546671003BA7A5 /* Constants.swift in Sources */,
 				B0AF07452353E98800518086 /* SceneDelegate.swift in Sources */,
 				B0D7171923541872006B0CB4 /* HomeViewController.swift in Sources */,
 			);
@@ -468,6 +632,7 @@
 		};
 		B0AF076A2353E98900518086 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EE4A613B7FD2B5118610DC5 /* Pods-dieTraumdeutung.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -486,6 +651,7 @@
 		};
 		B0AF076B2353E98900518086 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E196AD42DBBC1672182DA69 /* Pods-dieTraumdeutung.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +670,7 @@
 		};
 		B0AF076D2353E98900518086 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 101A7DE622EEF9BFF55B66A5 /* Pods-dieTraumdeutungTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -526,6 +693,7 @@
 		};
 		B0AF076E2353E98900518086 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E61EB2A8BE1ED1CB8CDAF31D /* Pods-dieTraumdeutungTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -548,6 +716,7 @@
 		};
 		B0AF07702353E98900518086 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1F4B316F615BD1BF0F7EB67 /* Pods-dieTraumdeutung-dieTraumdeutungUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -568,6 +737,7 @@
 		};
 		B0AF07712353E98900518086 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC97B75ADA6326DC0847673B /* Pods-dieTraumdeutung-dieTraumdeutungUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

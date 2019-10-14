@@ -100,7 +100,7 @@
                                             <action selector="signUpTapped:" destination="1dE-UV-dsK" eventType="touchUpInside" id="92E-WY-djn"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoQ-yT-Rbz">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoQ-yT-Rbz">
                                         <rect key="frame" x="0.0" y="350" width="334" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -163,7 +163,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pbY-hl-IjB">
-                                <rect key="frame" x="40" y="84" width="334" height="230.5"/>
+                                <rect key="frame" x="40" y="84" width="334" height="270"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0LI-A2-Jcv">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -185,8 +185,11 @@
                                             <action selector="logInTapped:" destination="4T6-W0-vdd" eventType="touchUpInside" id="3jr-qy-ADC"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcP-6D-q6d">
-                                        <rect key="frame" x="0.0" y="210" width="334" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcP-6D-q6d">
+                                        <rect key="frame" x="0.0" y="210" width="334" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="uY8-sS-K14"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -194,7 +197,13 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="qh1-QJ-anh" firstAttribute="height" secondItem="0LI-A2-Jcv" secondAttribute="height" id="CsQ-b9-or6"/>
+                                    <constraint firstAttribute="trailing" secondItem="0LI-A2-Jcv" secondAttribute="trailing" id="Gnt-w3-pgP"/>
+                                    <constraint firstItem="qh1-QJ-anh" firstAttribute="leading" secondItem="pbY-hl-IjB" secondAttribute="leading" id="Thr-Sm-otk"/>
+                                    <constraint firstAttribute="trailing" secondItem="LNw-gX-zGL" secondAttribute="trailing" id="VnK-D7-rDF"/>
                                     <constraint firstItem="LNw-gX-zGL" firstAttribute="height" secondItem="0LI-A2-Jcv" secondAttribute="height" id="bdf-ix-q5J"/>
+                                    <constraint firstAttribute="trailing" secondItem="qh1-QJ-anh" secondAttribute="trailing" id="mRV-pj-TwE"/>
+                                    <constraint firstItem="0LI-A2-Jcv" firstAttribute="leading" secondItem="pbY-hl-IjB" secondAttribute="leading" id="uNf-yS-Giu"/>
+                                    <constraint firstItem="LNw-gX-zGL" firstAttribute="leading" secondItem="pbY-hl-IjB" secondAttribute="leading" id="y4t-7D-xpT"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -221,7 +230,7 @@
         <!--Home View Controller-->
         <scene sceneID="MSN-Iz-5Ga">
             <objects>
-                <viewController id="YMS-Cr-Wbt" customClass="HomeViewController" customModule="dieTraumdeutung" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="YMS-Cr-Wbt" customClass="HomeViewController" customModule="dieTraumdeutung" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dgl-Tp-duK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
