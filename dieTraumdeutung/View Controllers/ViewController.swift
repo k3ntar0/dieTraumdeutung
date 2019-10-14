@@ -68,8 +68,15 @@ class ViewController: UIViewController {
         view.layer.insertSublayer(videoPlayerLayer!, at: 0)
         
         // Add it to the view and play it
-        videoPlayer?.playImmediately(atRate: 1)
+        videoPlayer?.playImmediately(atRate: 3)
         
+        // Loop the video
+        NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime,
+                                               object: nil,
+                                               queue: nil) { [weak self] note in
+                                                self?.videoPlayer?.seek(to: CMTime.zero)
+                                                self?.videoPlayer?.play()
+        }
     }
 
 
