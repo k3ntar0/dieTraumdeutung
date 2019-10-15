@@ -163,7 +163,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pbY-hl-IjB">
-                                <rect key="frame" x="40" y="84" width="334" height="270"/>
+                                <rect key="frame" x="40" y="124" width="334" height="270"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0LI-A2-Jcv">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -209,7 +209,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="pbY-hl-IjB" firstAttribute="top" secondItem="qyq-1y-DJ5" secondAttribute="top" constant="40" id="15n-rF-hhr"/>
+                            <constraint firstItem="pbY-hl-IjB" firstAttribute="top" secondItem="qyq-1y-DJ5" secondAttribute="top" constant="80" id="15n-rF-hhr"/>
                             <constraint firstItem="qyq-1y-DJ5" firstAttribute="trailing" secondItem="pbY-hl-IjB" secondAttribute="trailing" constant="40" id="bgu-0N-Exv"/>
                             <constraint firstItem="pbY-hl-IjB" firstAttribute="leading" secondItem="qyq-1y-DJ5" secondAttribute="leading" constant="40" id="wY0-YE-zcS"/>
                         </constraints>
