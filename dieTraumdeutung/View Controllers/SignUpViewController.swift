@@ -53,7 +53,7 @@ class SignUpViewController: UIViewController {
         let picker = UIImagePickerController()
         picker.sourceType = .photoLibrary
         picker.allowsEditing = true
-        picker.delegate = self as? UIImagePickerControllerDelegate & UINavigationControllerDelegate
+        picker.delegate = self
         self.present(picker, animated: true, completion: nil)
     }
     
@@ -139,6 +139,10 @@ class SignUpViewController: UIViewController {
         
         view.window?.rootViewController = homeViewController
         view.window?.makeKeyAndVisible()
+    }
+    
+    @IBAction func dismissAction(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
 }
 
