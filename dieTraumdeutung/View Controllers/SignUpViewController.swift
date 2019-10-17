@@ -85,8 +85,6 @@ class SignUpViewController: UIViewController {
     
     func setUpElements() {
         
-        // self.scrollView.isScrollEnabled = self.keyboardIsShown!
-        
         self.activeField = UITextField()
         
         // Dismiss keyboard
