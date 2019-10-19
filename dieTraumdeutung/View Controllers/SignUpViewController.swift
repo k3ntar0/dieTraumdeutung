@@ -13,6 +13,7 @@ import FirebaseFirestore
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
@@ -20,15 +21,75 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
+    
     var image: UIImage? = nil
+    var activeField: UITextField?
+    var keyboardIsShown: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setUpElements()
+        
+        scrollView.isScrollEnabled = false
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc func dismissKeyboard() {
+        self.view.endEditing(true)
+    }
+    
+    @objc func keyboardWillShow(notification: Notification) {
+        guard let keyBoardInfo = notification.userInfo else { return }
+        if let keyboardSize = (keyBoardInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue.size {
+            let keyboardHeight = keyboardSize.height + 10
+            let contentInsets = UIEdgeInsets(top: -112, left: 0, bottom: 0, right: 0)
+            self.scrollView.contentInset = contentInsets
+            var viewRect = self.view.frame
+            viewRect.size.height -= keyboardHeight
+            guard let activeField = self.activeField else { return }
+            if (!viewRect.contains(activeField.frame.origin)) {
+                let scrollPoint = CGPoint(x: 0, y: activeField.frame.origin.y - keyboardHeight)
+                self.scrollView.setContentOffset(scrollPoint, animated: true)
+            }
+        }
+        self.keyboardIsShown = true
+        lockSrolling()
+    }
+    
+    @objc func keyboardWillHide(notification: Notification) {
+        let contentInsets = UIEdgeInsets.zero
+        self.scrollView.contentInset = contentInsets
+        let scrollPoint = CGPoint(x: 0, y: 0)
+        self.scrollView.setContentOffset(scrollPoint, animated: true)
+        self.keyboardIsShown = false
+        lockSrolling()
+    }
+    
+    func lockSrolling() {
+        scrollView.isScrollEnabled = self.keyboardIsShown
     }
     
     func setUpElements() {
+        
+        self.activeField = UITextField()
+        
+        // Dismiss keyboard
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        self.view.addGestureRecognizer(tap)
         
         // Set user's avatar image area
         avatar.layer.cornerRadius = 64
@@ -36,7 +97,6 @@ class SignUpViewController: UIViewController {
         avatar.isUserInteractionEnabled = true
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(presentPicker))
         avatar.addGestureRecognizer(tapGesture)
-        
         
         // Hide the error lable
         errorLabel.alpha = 0
@@ -59,6 +119,7 @@ class SignUpViewController: UIViewController {
     
     // Check the fields and validate that the data is correct. If everything is correct, this method returns nil. Otherwise, it returns the error message.
     func validateFields() -> String? {
+        
         // Check that all fields are filled in
         if firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
@@ -163,4 +224,3 @@ extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationCon
         picker.dismiss(animated: true, completion: nil)
     }
 }
-
