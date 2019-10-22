@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		98B3A290DCD41152738BBA8A /* Pods_dieTraumdeutungTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39029B8DE083CE2C5C76A168 /* Pods_dieTraumdeutungTests.framework */; };
+		B038EF83235EE509000181FE /* AuthProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B038EF82235EE509000181FE /* AuthProtocols.swift */; };
 		B0AF07432353E98800518086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AF07422353E98800518086 /* AppDelegate.swift */; };
 		B0AF07452353E98800518086 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AF07442353E98800518086 /* SceneDelegate.swift */; };
 		B0AF07472353E98800518086 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AF07462353E98800518086 /* ViewController.swift */; };
@@ -50,6 +51,7 @@
 		39029B8DE083CE2C5C76A168 /* Pods_dieTraumdeutungTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dieTraumdeutungTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EE4A613B7FD2B5118610DC5 /* Pods-dieTraumdeutung.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dieTraumdeutung.debug.xcconfig"; path = "Target Support Files/Pods-dieTraumdeutung/Pods-dieTraumdeutung.debug.xcconfig"; sourceTree = "<group>"; };
 		9C2D8BF9F4639260C6AED6DB /* Pods_dieTraumdeutung_dieTraumdeutungUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dieTraumdeutung_dieTraumdeutungUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B038EF82235EE509000181FE /* AuthProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProtocols.swift; sourceTree = "<group>"; };
 		B0AF073F2353E98800518086 /* dieTraumdeutung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dieTraumdeutung.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0AF07422353E98800518086 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0AF07442353E98800518086 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				B0F2C5DE235421D8000740D2 /* Utilities.swift */,
+				B038EF82235EE509000181FE /* AuthProtocols.swift */,
 				B0DB2CF723546671003BA7A5 /* Constants.swift */,
 			);
 			path = Helpers;
@@ -456,6 +459,7 @@
 			files = (
 				B0AF07472353E98800518086 /* ViewController.swift in Sources */,
 				B0AF07432353E98800518086 /* AppDelegate.swift in Sources */,
+				B038EF83235EE509000181FE /* AuthProtocols.swift in Sources */,
 				B0F2C5DF235421D8000740D2 /* Utilities.swift in Sources */,
 				B0D717152354183A006B0CB4 /* SignUpViewController.swift in Sources */,
 				B0D7171723541869006B0CB4 /* LogInViewController.swift in Sources */,

@@ -12,7 +12,6 @@ import FirebaseFirestore
 
 
 class SignUpViewController: UIViewController {
-
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var firstNameTextField: UITextField!
@@ -25,12 +24,13 @@ class SignUpViewController: UIViewController {
     var image: UIImage? = nil
     var activeField: UITextField?
     var keyboardIsShown: Bool = false
-    
+    var delegate: SignUp!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setUpElements()
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -51,50 +51,33 @@ class SignUpViewController: UIViewController {
         // Validate the fields
         let error = validateFields()
         
-        if error != nil {
-            
-            // There's something wrong with the fields, show error message
-           showError(error!)
-            
-        } else {
-            
-            // Create cleaned versions of the data
-            let firstName = firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            
-            // Create the user
-            Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
-                
-                // Check for errors
-                if err != nil {
-                    // There was an error creating the user
-                    self.showError("Error creating user")
-                } else {
-                    // User was created successfully, now store the first name and last name
-                    let db = Firestore.firestore()
-                    
-                    db.collection("users").addDocument(data: [
-                        "firstname": firstName,
-                        "lastname": lastName,
-                        "uid": result!.user.uid
-                    ]) { (error) in
-                        
-                        if error != nil {
-                            // Show error message
-                            self.showError("Error saving user data")
-                        }
-                    }
-                    // Transition to the home screen
-                    self.transitionToHome()
-                }
-            }
+        guard error == nil else {
+            return showError(error!)
         }
+        
+        // Create cleaned versions of the data
+        let firstName = firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        signUp(firstName: firstName, lastName: lastName, email: email, password: password)
     }
     
     @IBAction func dismissAction(_ sender: Any) {
         navigationController?.popViewController(animated: true)
+    }
+}
+
+extension SignUpViewController: SignUp {
+    override func loadView() {
+        super.loadView()
+        delegate = self
+    }
+    
+    func didFailureSignUp(error: Error) {
+        print(error)
+        self.showError("Error creating user")
     }
 }
 
@@ -143,10 +126,6 @@ extension SignUpViewController {
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
         Utilities.styleFilledButton(signUpButton)
-    }
-    
-    func keyboardObserver() {
-        
     }
     
     @objc func keyboardWillShow(notification: Notification) {
