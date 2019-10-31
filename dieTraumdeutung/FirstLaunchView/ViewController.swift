@@ -12,7 +12,6 @@ import AVKit
 class ViewController: UIViewController {
     
     var videoPlayer:AVPlayer?
-    
     var videoPlayerLayer:AVPlayerLayer?
     
     @IBOutlet weak var signUpButton: UIButton!
@@ -68,7 +67,7 @@ class ViewController: UIViewController {
         view.layer.insertSublayer(videoPlayerLayer!, at: 0)
         
         // Add it to the view and play it
-        videoPlayer?.playImmediately(atRate: 3)
+        videoPlayer?.playImmediately(atRate: 1)
         
         // Loop the video
         NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime,
