@@ -172,11 +172,22 @@
                         <outlet property="passwordTextField" destination="2Xn-6j-zgf" id="Fqy-3D-taF"/>
                         <outlet property="scrollView" destination="H0K-6W-IzY" id="f84-SR-4hr"/>
                         <outlet property="signUpButton" destination="GIL-f4-9Cq" id="3cB-u5-xv2"/>
+                        <segue destination="RBZ-NH-ybP" kind="show" identifier="toHomeFromSignUp" id="3VM-tO-iAR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yrz-4T-23K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1776.8115942028987" y="-704.46428571428567"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="nbI-CU-5vt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="RBZ-NH-ybP" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="rf2-dz-4TA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="diR-LC-NRd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2458" y="-704"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="apK-Ac-s0r">
@@ -275,38 +286,22 @@
                         <outlet property="errorLabel" destination="XcP-6D-q6d" id="EWE-8q-79a"/>
                         <outlet property="logInButton" destination="qh1-QJ-anh" id="OFp-jX-1xl"/>
                         <outlet property="passwordTextField" destination="LNw-gX-zGL" id="JmO-e5-KX5"/>
+                        <segue destination="6Sm-QL-tOi" kind="show" identifier="toHomeFromLogIn" id="NbA-PM-08q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oOq-ZF-Meb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1776.8115942028987" y="22.767857142857142"/>
         </scene>
-        <!--Home View Controller-->
-        <scene sceneID="MSN-Iz-5Ga">
+        <!--Home-->
+        <scene sceneID="Ap1-oP-mS8">
             <objects>
-                <viewController storyboardIdentifier="HomeVC" id="YMS-Cr-Wbt" customClass="HomeViewController" customModule="dieTraumdeutung" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Dgl-Tp-duK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZM6-9B-04L">
-                                <rect key="frame" x="166.5" y="437.5" width="81" height="21"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="ZM6-9B-04L" firstAttribute="centerX" secondItem="Dgl-Tp-duK" secondAttribute="centerX" id="C3C-ch-QTW"/>
-                            <constraint firstItem="ZM6-9B-04L" firstAttribute="centerY" secondItem="Dgl-Tp-duK" secondAttribute="centerY" id="ML6-R4-OZd"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="nPA-OL-OZw"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yuW-3U-cox" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Home" id="6Sm-QL-tOi" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Cg4-Lc-fMm"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tm7-Mc-MLS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2501" y="-444"/>
+            <point key="canvasLocation" x="2459" y="23"/>
         </scene>
     </scenes>
     <resources>

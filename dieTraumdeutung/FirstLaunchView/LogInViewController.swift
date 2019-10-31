@@ -47,11 +47,8 @@ class LogInViewController: UIViewController {
                 self.errorLabel.text = error!.localizedDescription
                 self.errorLabel.alpha = 1
             } else {
-                // Signed in successfully
-                let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as?
-                HomeViewController
-                
-                self.view.window?.rootViewController = homeViewController
+                // Logged in successfully
+                self.performSegue(withIdentifier: "toHomeFromLogIn", sender: nil)
                 self.view.window?.makeKeyAndVisible()
             }
         }
