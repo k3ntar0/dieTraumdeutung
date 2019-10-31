@@ -11,22 +11,25 @@ import AVKit
 
 class ViewController: UIViewController {
     
-    var videoPlayer:AVPlayer?
-    var videoPlayerLayer:AVPlayerLayer?
-    
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var logInButton: UIButton!
+    
+    var videoPlayer:AVPlayer?
+    var videoPlayerLayer:AVPlayerLayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setUpElement()
+        setUpVideo()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
-        // Set up video in the background
-        setUpVideo()
+        videoPlayer?.play()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        videoPlayer?.pause()
     }
     
     func setUpElement() {
@@ -37,44 +40,22 @@ class ViewController: UIViewController {
     
     func setUpVideo() {
         
-        // Get the path to the resource in the bundle
-        let bundlePath = Bundle.main.path(forResource: "loginbg", ofType: "mp4")
-        
-        guard bundlePath != nil else {
-            return
-        }
-        
-        // Create a URL from it
+        let bundlePath = Bundle.main.path(forResource: "Launch", ofType: "mov")
+        guard bundlePath != nil else { return }
         let url = URL(fileURLWithPath: bundlePath!)
-        
-        // Create the video player item
         let item = AVPlayerItem(url: url)
         
-        // Create the Player
         videoPlayer = AVPlayer(playerItem: item)
-        
-        // Create the layer
         videoPlayerLayer = AVPlayerLayer(player: videoPlayer!)
-        
-        // Adjust the size and frame
-        videoPlayerLayer?.frame = CGRect(
-            x: -self.view.frame.size.width*1.5,
-            y: 0,
-            width: self.view.frame.size.width*4,
-            height: self.view.frame.size.height/2
-        )
+        videoPlayerLayer?.frame = view.bounds
+        videoPlayerLayer?.videoGravity = AVLayerVideoGravity.resizeAspectFill
+        videoPlayer?.playImmediately(atRate: 1)
         
         view.layer.insertSublayer(videoPlayerLayer!, at: 0)
         
-        // Add it to the view and play it
-        videoPlayer?.playImmediately(atRate: 1)
-        
         // Loop the video
-        NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime,
-                                               object: nil,
-                                               queue: nil) { [weak self] note in
-                                                self?.videoPlayer?.seek(to: CMTime.zero)
-                                                self?.videoPlayer?.play()
+        NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: nil, queue: nil) { [weak self] note in self?.videoPlayer?.seek(to: CMTime.zero)
+            self?.videoPlayer?.play()
         }
     }
 

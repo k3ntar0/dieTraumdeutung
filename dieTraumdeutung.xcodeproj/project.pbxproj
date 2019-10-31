@@ -17,11 +17,11 @@
 		B0AF075A2353E98900518086 /* dieTraumdeutungTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AF07592353E98900518086 /* dieTraumdeutungTests.swift */; };
 		B0AF07652353E98900518086 /* dieTraumdeutungUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AF07642353E98900518086 /* dieTraumdeutungUITests.swift */; };
 		B0B5AA87236A94A10063CB3A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B5AA86236A94A10063CB3A /* Home.storyboard */; };
+		B0B5AA91236AC57C0063CB3A /* Launch.mov in Resources */ = {isa = PBXBuildFile; fileRef = B0B5AA90236AC57C0063CB3A /* Launch.mov */; };
 		B0D717152354183A006B0CB4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D717142354183A006B0CB4 /* SignUpViewController.swift */; };
 		B0D7171723541869006B0CB4 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7171623541869006B0CB4 /* LogInViewController.swift */; };
 		B0D7171923541872006B0CB4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7171823541872006B0CB4 /* HomeViewController.swift */; };
 		B0DB2CF823546671003BA7A5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DB2CF723546671003BA7A5 /* Constants.swift */; };
-		B0DB2CFB23547780003BA7A5 /* loginbg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B0DB2CFA23547735003BA7A5 /* loginbg.mp4 */; };
 		B0E3ED5C235431BB0008FC54 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0E3ED5B235431BB0008FC54 /* GoogleService-Info.plist */; };
 		B0F2C5DF235421D8000740D2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F2C5DE235421D8000740D2 /* Utilities.swift */; };
 		DE62FE9999978228D6DFE6C2 /* Pods_dieTraumdeutung_dieTraumdeutungUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2D8BF9F4639260C6AED6DB /* Pods_dieTraumdeutung_dieTraumdeutungUITests.framework */; };
@@ -66,11 +66,11 @@
 		B0AF07642353E98900518086 /* dieTraumdeutungUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dieTraumdeutungUITests.swift; sourceTree = "<group>"; };
 		B0AF07662353E98900518086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0B5AA86236A94A10063CB3A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		B0B5AA90236AC57C0063CB3A /* Launch.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Launch.mov; sourceTree = "<group>"; };
 		B0D717142354183A006B0CB4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B0D7171623541869006B0CB4 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		B0D7171823541872006B0CB4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B0DB2CF723546671003BA7A5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		B0DB2CFA23547735003BA7A5 /* loginbg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginbg.mp4; sourceTree = "<group>"; };
 		B0E3ED5B235431BB0008FC54 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B0F2C5DE235421D8000740D2 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		DD8AD39CBAEC4CF2CD28A8AF /* Pods_dieTraumdeutung.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dieTraumdeutung.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,7 +210,7 @@
 		B0DB2CF923547689003BA7A5 /* Media */ = {
 			isa = PBXGroup;
 			children = (
-				B0DB2CFA23547735003BA7A5 /* loginbg.mp4 */,
+				B0B5AA90236AC57C0063CB3A /* Launch.mov */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -334,10 +334,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0AF074F2353E98900518086 /* LaunchScreen.storyboard in Resources */,
-				B0DB2CFB23547780003BA7A5 /* loginbg.mp4 in Resources */,
 				B0E3ED5C235431BB0008FC54 /* GoogleService-Info.plist in Resources */,
 				B0B5AA87236A94A10063CB3A /* Home.storyboard in Resources */,
 				B0AF074C2353E98900518086 /* Assets.xcassets in Resources */,
+				B0B5AA91236AC57C0063CB3A /* Launch.mov in Resources */,
 				B0AF074A2353E98800518086 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
